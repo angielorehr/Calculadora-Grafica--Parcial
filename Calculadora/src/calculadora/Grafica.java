@@ -48,9 +48,9 @@ public class Grafica extends javax.swing.JFrame {
         Cot = new javax.swing.JButton();
         Csc = new javax.swing.JButton();
         Sec = new javax.swing.JButton();
-        Sen1 = new javax.swing.JButton();
-        Sen4 = new javax.swing.JButton();
-        Sen5 = new javax.swing.JButton();
+        ArcSen = new javax.swing.JButton();
+        Arccos = new javax.swing.JButton();
+        Arctan = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -167,24 +167,24 @@ public class Grafica extends javax.swing.JFrame {
             }
         });
 
-        Sen1.setText("Arcsen");
-        Sen1.addMouseListener(new java.awt.event.MouseAdapter() {
+        ArcSen.setText("Arcsen");
+        ArcSen.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Sen1MouseClicked(evt);
+                ArcSenMouseClicked(evt);
             }
         });
 
-        Sen4.setText("Arccos");
-        Sen4.addMouseListener(new java.awt.event.MouseAdapter() {
+        Arccos.setText("Arccos");
+        Arccos.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Sen4MouseClicked(evt);
+                ArccosMouseClicked(evt);
             }
         });
 
-        Sen5.setText("Arctan");
-        Sen5.addMouseListener(new java.awt.event.MouseAdapter() {
+        Arctan.setText("Arctan");
+        Arctan.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Sen5MouseClicked(evt);
+                ArctanMouseClicked(evt);
             }
         });
 
@@ -213,11 +213,11 @@ public class Grafica extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(Cos, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(Sen1, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(ArcSen, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(Sen4, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Arccos, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(Sen5, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(Arctan, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -266,9 +266,9 @@ public class Grafica extends javax.swing.JFrame {
                     .addComponent(Sec, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(13, 13, 13)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Sen1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Sen4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Sen5, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ArcSen, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Arccos, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Arctan, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(21, 21, 21)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(resultado, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -371,17 +371,23 @@ public class Grafica extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_resultadoActionPerformed
 
-    private void Sen1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Sen1MouseClicked
+    private void ArcSenMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ArcSenMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_Sen1MouseClicked
+    miCalculadoraGrafica.numero1=Double.parseDouble(numero1.getText());
+    resultado.setText(miCalculadoraGrafica.Arcoseno()+"");    
+    }//GEN-LAST:event_ArcSenMouseClicked
 
-    private void Sen4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Sen4MouseClicked
+    private void ArccosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ArccosMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_Sen4MouseClicked
+    miCalculadoraGrafica.numero1=Double.parseDouble(numero1.getText());
+    resultado.setText(miCalculadoraGrafica.Arcocoseno()+""); 
+    }//GEN-LAST:event_ArccosMouseClicked
 
-    private void Sen5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Sen5MouseClicked
+    private void ArctanMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ArctanMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_Sen5MouseClicked
+    miCalculadoraGrafica.numero1=Double.parseDouble(numero1.getText());
+    resultado.setText(miCalculadoraGrafica.Arcotangente()+""); 
+    }//GEN-LAST:event_ArctanMouseClicked
 
     /**
      * @param args the command line arguments
@@ -419,14 +425,14 @@ public class Grafica extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton ArcSen;
+    private javax.swing.JButton Arccos;
+    private javax.swing.JButton Arctan;
     private javax.swing.JButton Cos;
     private javax.swing.JButton Cot;
     private javax.swing.JButton Csc;
     private javax.swing.JButton Sec;
     private javax.swing.JButton Sen;
-    private javax.swing.JButton Sen1;
-    private javax.swing.JButton Sen4;
-    private javax.swing.JButton Sen5;
     private javax.swing.JButton Tan;
     private javax.swing.JButton division;
     private javax.swing.JLabel jLabel1;

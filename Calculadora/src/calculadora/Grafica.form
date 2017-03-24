@@ -46,11 +46,11 @@
                               <Component id="Cos" min="-2" pref="56" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="Sen1" min="-2" pref="77" max="-2" attributes="0"/>
+                              <Component id="ArcSen" min="-2" pref="77" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="Sen4" min="-2" pref="77" max="-2" attributes="0"/>
+                              <Component id="Arccos" min="-2" pref="77" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="Sen5" min="-2" pref="77" max="-2" attributes="0"/>
+                              <Component id="Arctan" min="-2" pref="77" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -113,9 +113,9 @@
               </Group>
               <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="Sen1" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
-                  <Component id="Sen4" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
-                  <Component id="Sen5" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                  <Component id="ArcSen" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                  <Component id="Arccos" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                  <Component id="Arctan" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -240,28 +240,28 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SecActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="Sen1">
+    <Component class="javax.swing.JButton" name="ArcSen">
       <Properties>
         <Property name="text" type="java.lang.String" value="Arcsen"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Sen1MouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ArcSenMouseClicked"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="Sen4">
+    <Component class="javax.swing.JButton" name="Arccos">
       <Properties>
         <Property name="text" type="java.lang.String" value="Arccos"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Sen4MouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ArccosMouseClicked"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="Sen5">
+    <Component class="javax.swing.JButton" name="Arctan">
       <Properties>
         <Property name="text" type="java.lang.String" value="Arctan"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Sen5MouseClicked"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ArctanMouseClicked"/>
       </Events>
     </Component>
   </SubComponents>

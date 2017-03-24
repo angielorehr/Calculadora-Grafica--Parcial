@@ -79,4 +79,25 @@ public class Calculadora {
        resultado= 1/this.Coseno();
        return resultado;
 }
+    public Double Arcoseno()
+   {
+    double x;
+       x= Math.toRadians(this.numero1);
+       resultado= Math.asin(x);
+       return resultado;
+}
+      public Double Arcocoseno()
+   {
+    double x;
+       x= Math.toRadians(this.numero1);
+       resultado= Math.acos(x);
+       return resultado;
+}
+        public Double Arcotangente()
+   {
+    double x;
+       x= Math.toRadians(this.numero1);
+       resultado= Math.atan(x);
+       return resultado;
+}
 }
