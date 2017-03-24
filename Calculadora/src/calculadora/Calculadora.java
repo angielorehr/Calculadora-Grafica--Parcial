@@ -11,7 +11,7 @@ package calculadora;
  */
 public class Calculadora {
     
-    double numero1,numero2;
+    double numero1,numero2,resultado;
     
     public double sumar(){
     double suma;
@@ -36,5 +36,27 @@ public class Calculadora {
         division=numero1/numero2;
     return division;
     }    
+    
+   public Double Seno()
+   {
+       double x;
+       x= Math.toRadians(this.numero1);
+       resultado= Math.sin(x);
+       return resultado;
+   }
+   public Double Coseno()
+   {
+    double x;
+       x= Math.toRadians(this.numero1);
+       resultado= Math.cos(x);
+       return resultado;
+   }
+   public Double Tangente()
+   {
+    double x;
+       x= Math.toRadians(this.numero1);
+       resultado= Math.tan(x);
+       return resultado;
+   }
 }
 
