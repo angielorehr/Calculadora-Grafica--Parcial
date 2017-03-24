@@ -45,6 +45,13 @@
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="Cos" min="-2" pref="56" max="-2" attributes="0"/>
                           </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="Sen1" min="-2" pref="77" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="Sen4" min="-2" pref="77" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="Sen5" min="-2" pref="77" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
@@ -70,9 +77,9 @@
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="jLabel3" min="-2" pref="181" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="141" max="-2" attributes="0"/>
-                      <Component id="resultado" min="-2" pref="235" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
+                      <Component id="resultado" min="-2" pref="235" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="122" max="-2" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -91,7 +98,7 @@
                   <Component id="jLabel2" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                   <Component id="numero2" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="suma" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
                   <Component id="resta" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
@@ -104,12 +111,18 @@
                   <Component id="Csc" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
                   <Component id="Sec" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel3" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
-                  <Component id="resultado" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                  <Component id="Sen1" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                  <Component id="Sen4" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                  <Component id="Sen5" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="resultado" alignment="3" min="-2" pref="73" max="-2" attributes="0"/>
+                  <Component id="jLabel3" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -225,6 +238,30 @@
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="SecMouseClicked"/>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SecActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="Sen1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Arcsen"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Sen1MouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="Sen4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Arccos"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Sen4MouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="Sen5">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Arctan"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Sen5MouseClicked"/>
       </Events>
     </Component>
   </SubComponents>
