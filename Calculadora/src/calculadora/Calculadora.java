@@ -58,5 +58,25 @@ public class Calculadora {
        resultado= Math.tan(x);
        return resultado;
    }
+   public Double Cotangente()
+   {
+    double x;
+       x= Math.toRadians(this.numero1);
+       resultado= this.Seno()/this.Coseno();
+       return resultado;
 }
-
+   public Double Cosecante()
+   {
+    double x;
+       x= Math.toRadians(this.numero1);
+       resultado= 1/this.Seno();
+       return resultado;
+}
+    public Double Secante()
+   {
+    double x;
+       x= Math.toRadians(this.numero1);
+       resultado= 1/this.Coseno();
+       return resultado;
+}
+}

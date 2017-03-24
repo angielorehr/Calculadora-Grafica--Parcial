@@ -300,6 +300,8 @@ public class Grafica extends javax.swing.JFrame {
 
     private void CotMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CotMouseClicked
         // TODO add your handling code here:
+    miCalculadoraGrafica.numero1=Double.parseDouble(numero1.getText());
+    resultado.setText(miCalculadoraGrafica.Cotangente()+"");   
     }//GEN-LAST:event_CotMouseClicked
 
     private void CotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CotActionPerformed
@@ -308,6 +310,8 @@ public class Grafica extends javax.swing.JFrame {
 
     private void CscMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CscMouseClicked
         // TODO add your handling code here:
+    miCalculadoraGrafica.numero1=Double.parseDouble(numero1.getText());
+    resultado.setText(miCalculadoraGrafica.Cosecante()+"");   
     }//GEN-LAST:event_CscMouseClicked
 
     private void CscActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CscActionPerformed
@@ -316,6 +320,8 @@ public class Grafica extends javax.swing.JFrame {
 
     private void SecMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SecMouseClicked
         // TODO add your handling code here:
+    miCalculadoraGrafica.numero1=Double.parseDouble(numero1.getText());
+    resultado.setText(miCalculadoraGrafica.Secante()+"");   
     }//GEN-LAST:event_SecMouseClicked
 
     private void SecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SecActionPerformed
