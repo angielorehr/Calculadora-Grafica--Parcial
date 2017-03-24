@@ -5,18 +5,22 @@
  */
 package calculadora;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author estudiantes
  */
 public class Grafica extends javax.swing.JFrame {
     Calculadora miCalculadoraGrafica=new Calculadora();
+    
 
     /**
      * Creates new form Grafica
      */
     public Grafica() {
         initComponents();
+        JOptionPane.showMessageDialog(null,"Para las operaciones aritmeticas basicas ingrese dos numeros, para las trigonometricas un solo numero en el espacio de numero 1");
     }
 
     /**
